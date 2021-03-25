@@ -17,48 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/templateAdmin', function () {
-    return view('templateAdmin');
-});
+/*----------------------------------------DEBUT ROUTES D ACCES AUX PAGES----------------------------------------*/
 
-Route::get('/templateEtudiant', function () {
-    return view('templateEtudiant');
-});
 
-Route::get('/templatePilote', function () {
-    return view('templatePilote');
-});
-
-Route::get('/unEleve', function () {
-    return view('unEleve');
-});
+/*----------Offre----------*/
 
 Route::get('/creerOffre', function () {
     return view('creerOffre');
-});
-
-Route::get('/wishList', function () {
-    return view('wishList');
-});
-
-Route::get('/postuler', function () {
-    return view('postuler');
-});
-
-Route::get('/mesEntreprises', function () {
-    return view('mesEntreprises');
-});
-
-Route::get('/rechercherEtudiant', function () {
-    return view('rechercherEtudiant');
-});
-
-Route::get('/rechercherPilote', function () {
-    return view('rechercherPilote');
-});
-
-Route::get('/creerPilote', function () {
-    return view('creerPilote');
 });
 
 Route::get('/uneOffre', function () {
@@ -69,8 +34,22 @@ Route::get('/mesOffres', function () {
     return view('mesOffres');
 });
 
+Route::get('/postuler', function () {
+    return view('postuler');
+});
+
 Route::get('/rechercherOffre', function () {
     return view('rechercherOffre');
+});
+
+Route::get('/modifierOffre', function () {
+    return view('modifierOffre');
+});
+
+/*----------Entreprise----------*/
+
+Route::get('/mesEntreprises', function () {
+    return view('mesEntreprises');
 });
 
 Route::get('/rechercherEntreprise', function () {
@@ -85,50 +64,77 @@ Route::get('/evaluerEntreprise', function () {
     return view('evaluerEntreprise');
 });
 
-Route::get('/unDelegue', function () {
-    return view('unDelegue');
-});
-
-Route::get('/creerEtudiant', function () {
-    return view('creerEtudiant');
-});
-
-Route::get('/droitDelegue', function () {
-    return view('droitDelegue');
-});
-
 Route::get('/creerEntreprise', function () {
     return view('creerEntreprise');
-});
-
-Route::get('/mesDemandes', function () {
-    return view('mesDemandes');
-});
-
-Route::get('/rechercherDelegue', function () {
-    return view('rechercherDelegue');
-});
-
-Route::get('/modifierOffre', function () {
-    return view('modifierOffre');
 });
 
 Route::get('/modifierEntreprise', function () {
     return view('modifierEntreprise');
 });
 
+/*----------Eleve----------*/
+
+Route::get('/unEleve', function () {
+    return view('unEleve');
+});
+
+Route::get('/rechercherEtudiant', function () {
+    return view('rechercherEtudiant');
+});
+
+Route::get('/creerEtudiant', function () {
+    return view('creerEtudiant');
+});
+
 Route::get('/modifierEtudiant', function () {
     return view('modifierEtudiant');
 });
 
-Route::get('/modifierPilote', function () {
-    return view('modifierPilote');
+/*----------Délégué----------*/
+
+Route::get('/unDelegue', function () {
+    return view('unDelegue');
+});
+
+Route::get('/droitDelegue', function () {
+    return view('droitDelegue');
+});
+
+Route::get('/rechercherDelegue', function () {
+    return view('rechercherDelegue');
 });
 
 Route::get('/modifierDelegue', function () {
     return view('modifierDelegue');
 });
 
+/*----------Pilote----------*/
+
+Route::get('/rechercherPilote', function () {
+    return view('rechercherPilote');
+});
+
+Route::get('/creerPilote', function () {
+    return view('creerPilote');
+});
+
+
+Route::get('/modifierPilote', function () {
+    return view('modifierPilote');
+});
+
+/*----------Autre----------*/
+
+Route::get('/wishList', function () {
+    return view('wishList');
+});
+
+Route::get('/mesDemandes', function () {
+    return view('mesDemandes');
+});
+
 Route::get('/authentification', function () {
     return view('authentification');
 });
+
+/*----------------------------------------FIN ROUTES D ACCES AUX PAGES----------------------------------------*/
