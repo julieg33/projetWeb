@@ -83,7 +83,7 @@ Route::get('/rechercherEtudiant', function () {
 });
 
 Route::get('/creerEtudiant', function () {
-    return view('creerEtudiant');
+    return view('admin/etudiant/creerEtudiant');
 });
 
 Route::get('/modifierEtudiant', function () {

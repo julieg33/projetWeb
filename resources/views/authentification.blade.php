@@ -19,13 +19,13 @@
                 <p class="card-title mb-5 mt-5">Ce site a pour but de vous aider dans vos recherches de stage. Il répertorie différentes annonces et les entreprises qui leur sont associées. Vous pourrez également suivre l'avancement de vos demandes, tenir une Wish-list ainsi que de nombreuses autres fonctionnalités. </p>
                 <h5 class="card-text mb-5 mt-5">Pour accéder au site, merci de vous authentifier :</h5>
                 <label>Mail :</label>
-                <input type="text" class="form-control w-25 mx-auto">
+                <input type="email" class="form-control w-25 mx-auto">
                 <label>Mot de passe :</label>
                 <input type="password" class="form-control w-25 mx-auto">
                 <button type="button" class="btn btn-success w-25 mb-5 mt-5">Se connecter</button>
                 <p class="card-title text-right mt-5">Site dévéloppé par CAVARROC Maxime, DEVINEAU Rodrigue, GILS Julie et SEROUSSI Théo.</p>
             </div>
-        </div>         
+        </div>
 
         <style>			
                 body {
