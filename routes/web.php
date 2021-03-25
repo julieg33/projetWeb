@@ -65,3 +65,70 @@ Route::get('/uneOffre', function () {
     return view('uneOffre');
 });
 
+Route::get('/mesOffres', function () {
+    return view('mesOffres');
+});
+
+Route::get('/rechercherOffre', function () {
+    return view('rechercherOffre');
+});
+
+Route::get('/rechercherEntreprise', function () {
+    return view('rechercherEntreprise');
+});
+
+Route::get('/uneEntreprise', function () {
+    return view('uneEntreprise');
+});
+
+Route::get('/evaluerEntreprise', function () {
+    return view('evaluerEntreprise');
+});
+
+Route::get('/unDelegue', function () {
+    return view('unDelegue');
+});
+
+Route::get('/creerEtudiant', function () {
+    return view('creerEtudiant');
+});
+
+Route::get('/droitDelegue', function () {
+    return view('droitDelegue');
+});
+
+Route::get('/creerEntreprise', function () {
+    return view('creerEntreprise');
+});
+
+Route::get('/mesDemandes', function () {
+    return view('mesDemandes');
+});
+
+Route::get('/rechercherDelegue', function () {
+    return view('rechercherDelegue');
+});
+
+Route::get('/modifierOffre', function () {
+    return view('modifierOffre');
+});
+
+Route::get('/modifierEntreprise', function () {
+    return view('modifierEntreprise');
+});
+
+Route::get('/modifierEtudiant', function () {
+    return view('modifierEtudiant');
+});
+
+Route::get('/modifierPilote', function () {
+    return view('modifierPilote');
+});
+
+Route::get('/modifierDelegue', function () {
+    return view('modifierDelegue');
+});
+
+Route::get('/authentification', function () {
+    return view('authentification');
+});
