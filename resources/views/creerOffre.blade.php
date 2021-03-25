@@ -6,9 +6,9 @@
 
 @section('content')
 
-	<div class="card mt-3">
+	<div class="card  w-75 text-center  mx-auto mt-3">
         <div class="card-header text-center">
-            <p>Offre proposé par : [nom de l'entreprise] à [localité entreprise] le <?php echo date('d/m/Y'); ?></p>
+            <h5>Offre proposé par : [nom de l'entreprise] à [localité entreprise] le <?php echo date('d/m/Y'); ?></h5>
         </div>
         <div class="card-body">
             <form>

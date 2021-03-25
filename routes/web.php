@@ -53,3 +53,15 @@ Route::get('/rechercherEtudiant', function () {
     return view('rechercherEtudiant');
 });
 
+Route::get('/rechercherPilote', function () {
+    return view('rechercherPilote');
+});
+
+Route::get('/creerPilote', function () {
+    return view('creerPilote');
+});
+
+Route::get('/uneOffre', function () {
+    return view('uneOffre');
+});
+
