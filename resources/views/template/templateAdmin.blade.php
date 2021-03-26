@@ -35,8 +35,8 @@
 								Offre
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Rechercher</a>
-								<a class="dropdown-item" href="#">Mes offres</a>
+								<a class="dropdown-item" href ="{{ url('/rechercherOffre') }}">Rechercher</a>
+								<a class="dropdown-item" href ="{{ url('/mesOffres') }}">Mes offres</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -44,24 +44,24 @@
 								Entreprise
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Rechercher</a>
-								<a class="dropdown-item" href="#">Mes entreprises</a>
+								<a class="dropdown-item" href ="{{ url('/rechercherEntreprise') }}">Rechercher</a>
+								<a class="dropdown-item" href ="{{ url('/mesEntreprises') }}">Mes entreprises</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Délégué</a>
+							<a class="nav-link" href ="{{ url('/rechercherDelegue') }}">Délégué</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Étudiant</a>
+							<a class="nav-link" href ="{{ url('/rechercherEtudiant') }}">Étudiant</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Wish-list</a>
+							<a class="nav-link" href ="{{ url('/wishList') }}">Wish-list</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Mes demandes</a>
+							<a class="nav-link" href ="{{ url('/mesDemandes') }}">Mes demandes</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Pilote</a>
+							<a class="nav-link" href ="{{ url('/rechercherPilote') }}">Pilote</a>
 						</li>
 					</ul>
 				</div>

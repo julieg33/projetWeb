@@ -15,7 +15,7 @@
                         <p class="card-text">par [Nom de l'entreprise]</p>
                     </div>
                     <div class="col text-right">
-                        <button type="button" class="btn btn-success">Voir l'offre</button>
+                        <a type="button" class="btn btn-success"  href ="{{ url('/uneOffre') }}">Voir l'offre</a>
                         <button type="button" class="btn btn-danger">Retirer l'offre de ma Wish-List</button>
                     </div>
                 </div>

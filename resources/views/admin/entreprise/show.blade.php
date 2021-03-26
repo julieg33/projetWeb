@@ -26,7 +26,7 @@
                 <div class="col-6"><p class="card-text text-left">[Nombre de stagiaire CESI déjà recrutés]</p></div>
             </div>
             <div class="row mt-4 justify-content-center">
-                <button type="button" class="btn btn-success center-block">Évaluer l'entreprise</button>
+                <a type="button" class="btn btn-success center-block" href ="{{ url('/evaluerEntreprise') }}">Évaluer l'entreprise</a>
             </div>
             <div class="row mt-4">
                 <div class="col-6">
@@ -37,7 +37,7 @@
                                 <h5 class="card-title">[Titre de l'offre]</h5>
                             </div>
                             <div class="col text-right mt-4 mr-2 mb-4">
-                                <button type="button" class="btn btn-dark w-50" >Voir l'offre</button>
+                                <a type="button" class="btn btn-dark w-50" href ="{{ url('/uneOffre') }}">Voir l'offre</a>
                             </div>
                         </div>
                     </div>

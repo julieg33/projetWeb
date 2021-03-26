@@ -16,7 +16,7 @@
                 <button type="button" class="btn btn-dark w-25 mt-3">Rechercher</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-success w-50 mt-5">Créer une nouvelle offre</button>
+                <a type="button" class="btn btn-success w-50 mt-5" href ="{{ url('/creerOffre') }}">Créer une nouvelle offre</a>
             </div>
         </div>
         <div class="card mt-5 w-75 mx-auto">
@@ -26,8 +26,8 @@
                     <p class="card-text">[Nom de l'entreprise]</p>  
                 </div>
                 <div class="col text-right mt-4">
-                    <button type="button" class="btn btn-dark w-25">Voir</button>
-                    <button type="button" class="btn btn-warning w-25">Modifier</button>
+                    <a type="button" class="btn btn-dark w-25" href ="{{ url('/uneOffre') }}">Voir</a>
+                    <a type="button" class="btn btn-warning w-25" href ="{{ url('/modifierOffre') }}">Modifier</a>
                     <button type="button" class="btn btn-danger w-25">Supprimer</button>
                 </div>
             </div>

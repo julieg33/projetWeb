@@ -23,7 +23,7 @@
                 <button type="button" class="btn btn-dark w-25 mt-3">Rechercher</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-success w-50 mt-5">Créer un nouveau délégué</button>
+                <a type="button" class="btn btn-success w-50 mt-5" href ="{{ url('/creerEtudiant') }}">Créer un nouveau délégué</a>
             </div>
         </div>
         <div class="card mt-5 w-75 mx-auto">
@@ -34,8 +34,8 @@
                     <p class="card-text">Promotion : [promotion]</p>
                 </div>
                 <div class="col text-right mt-4">
-                    <button type="button" class="btn btn-dark w-25">Voir</button>
-                    <button type="button" class="btn btn-warning w-25">Modifier</button>
+                    <a type="button" class="btn btn-dark w-25" href ="{{ url('/unDelegue') }}">Voir</a>
+                    <a type="button" class="btn btn-warning w-25" href ="{{ url('/modifierDelegue') }}">Modifier</a>
                     <button type="button" class="btn btn-danger w-25">Supprimer</button>
                 </div>
             </div>

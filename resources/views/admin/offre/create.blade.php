@@ -1,25 +1,21 @@
-@extends('template.templateAdmin', ['title' => "Modification d'une offre"])
-
-@section('css')
-<link rel="stylesheet" type = "text/css" href ="{{url('css/creerOffre.css')}}">
-@endsection
+@extends('template.templateAdmin', ['title' => "Création d'une offre"])
 
 @section('content')
 
 	<div class="card  w-75 text-center  mx-auto mt-3">
         <div class="card-header text-center">
-            <h5>Offre proposé par : [nom de l'entreprise] à [localité entreprise] le [date de création]</h5>
+            <h5>Offre proposé par : [nom de l'entreprise] à [localité entreprise] le <?php echo date('d/m/Y'); ?></h5>
         </div>
         <div class="card-body">
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Titre de l'annonce</label>
-                        <input type="text" class="form-control" value="[Titre de l'annonce]" >
+                        <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-md-6">
                         <label>Nombre de place disponible </label>
-                        <input type="number" class="form-control" value="1" >
+                        <input type="number" class="form-control">
                     </div>
                 </div>
                 <div class="form-row">
@@ -29,27 +25,27 @@
                             <div class="form-group col-md-6">
                                 <div class="row">
                                     <div class="col-sm-2 text-right" ><p>Du</p></div>
-                                    <div class="col-sm-8"><input type="date" class="form-control" value="2001-01-02" ></div>
+                                    <div class="col-sm-8"><input type="date" class="form-control"></div>
                                 </div>                                                                
                             </div>
                             <div class="form-group col-md-6">
                                 <div class="row">
                                     <div class="col-sm-2 text-right "><p>Au</p></div>
-                                    <div class="col-sm-8"><input type="date" class="form-control" value="2021-01-02"></div>
+                                    <div class="col-sm-8"><input type="date" class="form-control"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group col-md-6">
                         <label>Compétences requises </label>
-                        <input type="text" class="form-control" value="[Compétences requises]" >
+                        <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Promotion visée</label>
-                        <select class="custom-select " id="selectAvancement">
-                            <option selected>[Promotion visée]</option>
+                        <select class="custom-select ">
+                            <option selected>Choose...</option>
                             <option value="1">1ère année</option>
                             <option value="2">2ème année</option>
                             <option value="3">3ème année</option>
@@ -59,21 +55,24 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label>Base de rémunération (/h) </label>
-                        <input type="number" step="0.01" class="form-control" value="1" >
+                        <input type="number" step="0.01" class="form-control">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Description de l'annonce</label>
-                        <textarea class="form-control" rows="3">[Description de l'offre]</textarea>
+                        <textarea class="form-control" rows="3"></textarea>
                     </div>
                     <div class="form-group col-md-6 text-center">
-                        <button type="button" class="btn btn-warning mt-5 w-25 h-50">Modifier</button>
-                    </div>
-                    
+                        <button type="button" class="btn btn-success mt-5 w-25 h-50">Créer</button>
+                    </div>                    
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById("Aujourdhui").valueAsDate = new Date();
+    </script>
 
 @endsection

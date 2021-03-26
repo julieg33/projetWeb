@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => "Création d'un éudiant"])
+@extends('template.templateAdmin', ['title' => "Création d'un étudiant"])
 
 @section('content')
 
@@ -31,7 +31,11 @@
                 <div class="mt-4">
                     <input type="checkbox">
                     <label>Délégué</label>
-                </div>                
+                </div>     
+
+                <!--Si case "delegue" cochée, alors bouton Créer devient :
+                    <a type="button" class="btn btn-dark w-25 mt-3" href ="{{ url('/droitDelegue') }}">Créer</a>    
+                -->       
                 <button type="button" class="btn btn-dark w-25 mt-3">Créer</button>
             </div>
         </div>

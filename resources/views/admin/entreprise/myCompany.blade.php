@@ -11,7 +11,7 @@
                 <button type="submit" class="btn btn-dark w-50 float-left">Rechercher</button>
             </div>
             <div class="col">
-                <button type="submit" class="btn btn-success w-50">Créer une nouvelle entreprise</button>
+                <a type="submit" class="btn btn-success w-50" href ="{{ url('/creerEntreprise') }}">Créer une nouvelle entreprise</a>
             </div>
         </div>
         <div class="card mt-5 w-75 mx-auto">
@@ -21,10 +21,10 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm">
-                        <button type="submit" class="btn btn-dark w-50">Voir</button>
+                        <a type="submit" class="btn btn-dark w-50" href ="{{ url('/uneEntreprise') }}">Voir</a>
                     </div>
                     <div class="col-sm">
-                        <button type="submit" class="btn btn-warning w-50">Modifier</button>
+                        <a type="submit" class="btn btn-warning w-50" href ="{{ url('/modifierEntreprise') }}">Modifier</a>
                     </div>
                     <div class="col-sm">
                         <button type="submit" class="btn btn-danger w-50">Supprimer</button>

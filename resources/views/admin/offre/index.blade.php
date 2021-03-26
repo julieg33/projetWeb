@@ -1,9 +1,5 @@
 @extends('template.templateAdmin', ['title' => "Nos offres"])
 
-@section('css')
-<link rel="stylesheet" type = "text/css" href ="{{url('css/creerOffre.css')}}">
-@endsection
-
 @section('content')
 
     <div class="row">
@@ -52,7 +48,7 @@
                                     <p class="card-text text-left">par [Nom de l'entreprise]</p>
                                 </div>
                                 <div class="col text-right">
-                                    <button type="button" class="btn btn-dark">Voir l'offre</button>
+                                    <a type="button" class="btn btn-dark" href ="{{ url('/uneOffre') }}">Voir l'offre</a>
                                 </div>
                             </div>
                         </div>

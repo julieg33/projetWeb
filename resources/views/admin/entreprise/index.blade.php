@@ -20,7 +20,9 @@
                     <p class="text-left mt-2">Évaluation des stagiaires (/10) :</p>
                     <input type="number" class="form-control" min="0" max="10">
                     <p class="text-left mt-2">Confiance du pilote (/10) :</p>
-                    <input type="number" class="form-control" min="0" max="10">                
+                    <input type="number" class="form-control" min="0" max="10">
+                    <button type="button" class="btn btn-dark mt-4">Rechercher</button>
+            
                 </div>
             </div>
         </div>
@@ -38,7 +40,7 @@
                                     <p class="card-text text-left">[Localité de l'entreprise]</p>
                                 </div>
                                 <div class="col text-right">
-                                    <button type="button" class="btn btn-success">Voir l'entreprise</button>
+                                    <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Voir l'entreprise</a>
                                 </div>
                             </div>
                         </div>

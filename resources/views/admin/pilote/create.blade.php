@@ -29,7 +29,7 @@
                     <input type="password" class="form-control w-50 mx-auto">
                     <label>Confirmation du mot de passe : :</label>
                     <input type="password" class="form-control w-50 mx-auto">               
-                    <button type="button" class="btn btn-dark w-25 mt-3">Créer</button>
+                    <button type="button" class="btn btn-success w-25 mt-3">Créer</button>
                 </div>
             </div>
         </div>
