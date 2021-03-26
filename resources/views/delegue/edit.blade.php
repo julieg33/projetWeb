@@ -27,7 +27,8 @@
                 <label>Mot de passe :</label>
                 <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">
                 <label>Confirmation du mot de passe : :</label>
-                <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">      
+                <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">
+                @if(Auth::user()->right->SFx21)
                 <div class="mt-4">
                     <select class="custom-select " multiple>
             <!--Pour préremplir, mettre selected après option si l'option était cochée lors de la création-->
@@ -69,7 +70,8 @@
                             <option>Informer le système de l'avancement de la candidature step 4</option>
                         </optgroup>
                     </select>
-                </div>                
+                </div>  
+                @endif              
                 <button type="button" class="btn btn-warning w-25 mt-3">Modifier</button>
             </div>
         </div>
