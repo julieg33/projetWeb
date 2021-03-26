@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => "Modification d'une offre"])
+@extends('appLayout', ['title' => "Modification d'une offre"])
 
 @section('content')
 
@@ -45,7 +45,8 @@
                     <div class="form-group col-md-6">
                         <label>Promotion visée</label>
                         <select class="custom-select " id="selectAvancement">
-                            <option selected>[Promotion visée]</option>
+                            <option selected>Choose...</option>
+                            <!--foreach pour afficher les promos-->
                             <option value="1">1ère année</option>
                             <option value="2">2ème année</option>
                             <option value="3">3ème année</option>

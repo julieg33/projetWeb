@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => "Nos offres"])
+@extends('appLayout', ['title' => "Nos offres"])
 
 @section('content')
 

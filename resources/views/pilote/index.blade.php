@@ -23,7 +23,9 @@
                 <button type="button" class="btn btn-dark w-25 mt-3">Rechercher</button>
             </div>
             <div class="col">
-                <a type="button" class="btn btn-success w-50 mt-5" href ="{{ url('/creerPilote') }}">Créer un nouveau pilote</a>
+                @if(Auth::user()->right->SFx14)
+                    <a type="button" class="btn btn-success w-50 mt-5" href ="{{ url('/creerPilote') }}">Créer un nouveau pilote</a>
+                @endif
             </div>
         </div>
         <div class="card mt-5 w-75 mx-auto">
@@ -34,8 +36,12 @@
                     <p class="card-text">Promotions assignées : [promotions assignées]</p>
                 </div>
                 <div class="col text-right mt-4 mr-5">
-                    <a type="button" class="btn btn-warning w-25" href ="{{ url('/modifierPilote') }}">Modifier</a>
-                    <button type="button" class="btn btn-danger w-25" >Supprimer</button>
+                    @if(Auth::user()->right->SFx15)
+                        <a type="button" class="btn btn-warning w-25" href ="{{ url('/modifierPilote') }}">Modifier</a>
+                    @endif
+                    @if(Auth::user()->right->SFx15)
+                        <button type="button" class="btn btn-danger w-25" >Supprimer</button>
+                    @endif
                 </div>
             </div>
         </div>

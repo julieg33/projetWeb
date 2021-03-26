@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => 'Mes offres'])
+@extends('appLayout', ['title' => 'Mes offres'])
 
 @section('css')
     <link rel="stylesheet" type = "text/css" href ="{{url('css/rechercherEtudiant.css')}}">
@@ -25,7 +25,7 @@
                     <h5 class="card-title">[Titre de l'offre]</h5>
                     <p class="card-text">[Nom de l'entreprise]</p>  
                 </div>
-                <div class="col text-right mt-4">
+                <div class="col text-right mt-4 mb-3">
                     <a type="button" class="btn btn-dark w-25" href ="{{ url('/uneOffre') }}">Voir</a>
                     <a type="button" class="btn btn-warning w-25" href ="{{ url('/modifierOffre') }}">Modifier</a>
                     <button type="button" class="btn btn-danger w-25">Supprimer</button>

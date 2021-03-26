@@ -26,9 +26,11 @@
                     <div class="col-sm">
                         <a type="submit" class="btn btn-warning w-50" href ="{{ url('/modifierEntreprise') }}">Modifier</a>
                     </div>
-                    <div class="col-sm">
-                        <button type="submit" class="btn btn-danger w-50">Supprimer</button>
-                    </div>
+                    @if(Auth::user()->right->SFx6)								
+                        <div class="col-sm">
+                            <button type="submit" class="btn btn-danger w-50">Supprimer</button>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => 'Offre'])
+@extends('appLayout', ['title' => 'Offre'])
 
 
 @section('content')
@@ -27,8 +27,10 @@
                     <p class="card-text text-justify">[Description de l'offre]</p>
                 </div>
             </div>
-            <a type="button" class="btn btn-success mt-5 w-25 h-50" style="white-space:normal" href ="{{ url('/postuler') }}">Postuler</a></br>
-            <button type="button" class="btn btn-dark mt-2 w-25 h-50" style="white-space:normal">Ajouter cette offre à ma Wish-List</button>
+            @if( Auth::user()->right->SFx27 && Auth::user()->right->SFx28 )
+                <a type="button" class="btn btn-success mt-5 w-25 h-50" style="white-space:normal" href ="{{ url('/postuler') }}">Postuler</a></br>
+                <button type="button" class="btn btn-dark mt-2 w-25 h-50" style="white-space:normal">Ajouter cette offre à ma Wish-List</button>
+            @endif
         </div>
     </div>
 
