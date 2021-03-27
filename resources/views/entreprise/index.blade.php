@@ -29,7 +29,14 @@
         <div class="col-9">
             <div class="card  mt-3">
                 <div class="card-header text-left">
-                    <h5>Résultats :</h5>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Résultats :</h5>
+                        </div>
+                        <div class="col text-right">
+                            <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Créer une entreprise</a>                                </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body">
                     <div class="card  mt-3 mb-3">        
@@ -40,7 +47,9 @@
                                     <p class="card-text text-left">[Localité de l'entreprise]</p>
                                 </div>
                                 <div class="col text-right">
-                                    <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Voir l'entreprise</a>
+                                <a type="button" class="btn btn-dark" href ="{{ url('/uneEntreprise') }}">Voir </a>
+                                    <a type="button" class="btn btn-warning" href ="{{ url('/uneEntreprise') }}">Modifier</a>
+                                    <a type="button" class="btn btn-danger" href ="{{ url('/uneEntreprise') }}">Supprimer</a>
                                 </div>
                             </div>
                         </div>
