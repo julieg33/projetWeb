@@ -28,15 +28,6 @@
                 <input type="password" class="form-control w-50 mx-auto">
                 <label>Confirmation du mot de passe :</label>
                 <input type="password" class="form-control w-50 mx-auto">      
-                @if(Auth::user()->right->SFx18)
-                    <div class="mt-4">
-                        <input type="checkbox">
-                        <label>Délégué</label>
-                    </div>     
-                @endif
-                <!--Si case "delegue" cochée, alors bouton Créer devient :
-                    <a type="button" class="btn btn-dark w-25 mt-3" href ="{{ url('/droitDelegue') }}">Créer</a>    
-                -->       
                 <button type="button" class="btn btn-dark w-25 mt-3">Créer</button>
             </div>
         </div>

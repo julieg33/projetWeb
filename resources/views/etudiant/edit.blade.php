@@ -27,15 +27,7 @@
                 <label>Mot de passe :</label>
                 <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">
                 <label>Confirmation du mot de passe :</label>
-                <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">      
-                <div class="mt-4">
-                    <input type="checkbox">
-                    <label>Délégué</label>
-                </div>   
-                
-            <!--Si case "delegue" cochée, alors bouton Créer devient :
-                <a type="button" class="btn btn-dark w-25 mt-3" href ="{{ url('/droitDelegue') }}">Créer</a>    
-            -->             
+                <input type="password" class="form-control w-50 mx-auto" value="[Mot de passe]">           
                 <button type="button" class="btn btn-dark w-25 mt-3">Modifier</button>
             </div>
         </div>

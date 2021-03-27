@@ -1,4 +1,4 @@
-@extends('template.templateAdmin', ['title' => "Attribution des droits au délégué"])
+@extends('template.templateAdmin', ['title' => "Création d'un délégué"])
 
 @section('content')
 
@@ -6,17 +6,23 @@
         <div class="card-body row">
             <div class="col-6">
                 <label>Nom :</label>
-                <input type="text" class="form-control w-50 mx-auto" placeholder="[Nom]" readonly>
+                <input type="text" class="form-control w-50 mx-auto">
                 <label>Prénom :</label>
-                <input type="text" class="form-control w-50 mx-auto" placeholder="[Prénom]" readonly>
+                <input type="text" class="form-control w-50 mx-auto">
                 <label>Centre :</label>
-                <input type="text" class="form-control w-50 mx-auto" placeholder="[Centre]" readonly>
+                <input type="text" class="form-control w-50 mx-auto">
                 <label>Promotion assignée :</label><br>
-                <input type="text" class="form-control w-50 mx-auto" placeholder="[Promotion assignée]" readonly>
+                <input type="text" class="form-control w-50 mx-auto">
+                <label>Mail :</label>
+                <input type="email" class="form-control w-50 mx-auto">
             </div>
             <div class="col-6">
-                <div class="mt-4">
-                    <select class="custom-select " multiple>
+                <label>Mot de passe :</label>
+                <input type="password" class="form-control w-50 mx-auto">
+                <label>Confirmation du mot de passe :</label>
+                <input type="password" class="form-control w-50 mx-auto">  
+                @if(Auth::user()->right->SFx21) 
+                    <select class="custom-select mt-4 " multiple>
                         <optgroup label="Entreprise">
                             <option>Rechercher</option>
                             <option>Créer</option>
@@ -55,8 +61,8 @@
                             <option>Informer le système de l'avancement de la candidature step 4</option>
                         </optgroup>
                     </select>
-                </div>
-                <button type="button" class="btn btn-success w-25 mt-5">Créer ce délégué</button>
+                @endif
+                <button type="button" class="btn btn-success w-25 mt-4">Créer ce délégué</button>
             </div>
         </div>
     </div>
