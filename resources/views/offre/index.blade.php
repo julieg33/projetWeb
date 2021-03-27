@@ -38,7 +38,18 @@
         </div>
         <div class="col-9">
             <div class="card  mt-3">
-                <h5 class="card-header text-left">Résultats :</h5>
+                <div class="card-header text-left">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Résultats :</h5>
+                        </div>
+                        @if(Auth::user()->right->SFx3)
+                            <div class="col text-right">
+                                <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Créer une offre</a>                      
+                            </div>
+                        @endif
+                    </div>
+                </div>           
                 <div class="card-body">
                     <div class="card  mt-3 mb-3">        
                         <div class="card-body" >
@@ -48,7 +59,13 @@
                                     <p class="card-text text-left">par [Nom de l'entreprise]</p>
                                 </div>
                                 <div class="col text-right">
-                                    <a type="button" class="btn btn-dark" href ="{{ url('/uneOffre') }}">Voir l'offre</a>
+                                    <a type="button" class="btn btn-dark" href ="{{ url('/uneEntreprise') }}">Voir </a>
+                                    @if(Auth::user()->right->SFx10)
+                                        <a type="button" class="btn btn-warning" href ="{{ url('/uneEntreprise') }}">Modifier</a>   
+                                    @endif
+                                    @if(Auth::user()->right->SFx11)
+                                        <a type="button" class="btn btn-danger" href ="{{ url('/uneEntreprise') }}">Supprimer</a> 
+                                    @endif
                                 </div>
                             </div>
                         </div>
