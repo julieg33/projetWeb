@@ -33,9 +33,11 @@
                         <div class="col">
                             <h5>Résultats :</h5>
                         </div>
-                        <div class="col text-right">
-                            <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Créer une entreprise</a>                                </div>
-                        </div>
+                        @if(Auth::user()->right->SFx3)
+                            <div class="col text-right">
+                                <a type="button" class="btn btn-success" href ="{{ url('/uneEntreprise') }}">Créer une entreprise</a>                       
+                            </div>
+                        @endif
                     </div>
                 </div>
                 <div class="card-body">
@@ -46,10 +48,14 @@
                                     <h5 class="card-title text-left">[Nom de l'entreprise]</h5>
                                     <p class="card-text text-left">[Localité de l'entreprise]</p>
                                 </div>
-                                <div class="col text-right">
-                                <a type="button" class="btn btn-dark" href ="{{ url('/uneEntreprise') }}">Voir </a>
-                                    <a type="button" class="btn btn-warning" href ="{{ url('/uneEntreprise') }}">Modifier</a>
-                                    <a type="button" class="btn btn-danger" href ="{{ url('/uneEntreprise') }}">Supprimer</a>
+                                <div class="col text-right">								
+                                    <a type="button" class="btn btn-dark" href ="{{ url('/uneEntreprise') }}">Voir </a>
+                                    @if(Auth::user()->right->SFx4)								
+                                        <a type="button" class="btn btn-warning" href ="{{ url('/uneEntreprise') }}">Modifier</a>
+                                    @endif
+                                    @if(Auth::user()->right->SFx6)		
+                                        <a type="button" class="btn btn-danger" href ="{{ url('/uneEntreprise') }}">Supprimer</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
