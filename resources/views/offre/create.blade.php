@@ -3,11 +3,28 @@
 @section('content')
 
 	<div class="card  w-75 text-center  mx-auto mt-3">
-        <div class="card-header text-center">
-            <h5>Offre proposé par : [nom de l'entreprise] à [localité entreprise] le <?php echo date('d/m/Y'); ?></h5>
-        </div>
         <div class="card-body">
             <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Nom de l'entreprise :</label>
+                        <select class="custom-select ">
+                            <option selected>Choose...</option>
+                            <option value="1">Pierre</option>
+                            <option value="2">Paul</option>
+                            <option value="3">Jacques</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Localité :</label>
+                        <select class="custom-select ">
+                        <option selected>Choose...</option>
+                            <option value="1">Pierre</option>
+                            <option value="2">Paul</option>
+                            <option value="3">Jacques</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Titre de l'annonce</label>
